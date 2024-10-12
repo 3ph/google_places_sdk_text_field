@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
                       decoration: InputDecoration(
                         border: border,
                         focusedBorder: border.copyWith(
-                          borderSide: BorderSide(width: 2),
+                          borderSide: const BorderSide(width: 2),
                         ),
                         fillColor: Colors.green.shade100,
                         filled: true,

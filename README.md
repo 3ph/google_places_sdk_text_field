@@ -35,10 +35,64 @@ GooglePlacesSdkTextField(
 
 The API key is required. For more information on how to obtain it please see [flutter-google-places-sdk] documentation. You can also pass parameters to SDK package. Most of the `TextField` parameters are also supported.
 
+More complex usage:
+```dart
+GooglePlacesSdkTextField(
+  apiKey: '_your_API_key',
+  countries: const ['nz', 'us'],
+  fetchPlace: true,
+  fetchPlaceFields: const [
+    PlaceField.Location,
+    PlaceField.Address,
+  ],
+  decoration: InputDecoration(
+    border: border,
+    focusedBorder: border.copyWith(
+      borderSide: const BorderSide(width: 2),
+    ),
+    fillColor: Colors.green.shade100,
+    filled: true,
+  ),
+  clearIcon: const Icon(
+    Icons.exit_to_app,
+    color: Colors.green,
+  ),
+  loadingWidget: LinearProgressIndicator(
+    color: Colors.green.shade700,
+  ),
+  onPlaceSelected: (prediction, place) {
+    // do something here
+  },
+  placesBuilder: (predictions, onPredictionSelected) {
+    return ListView(
+      padding: EdgeInsets.zero,
+      shrinkWrap: true,
+      children: predictions.map((prediction) {
+        return Container(
+          decoration: BoxDecoration(
+            color: Colors.green.shade100,
+            borderRadius: BorderRadius.circular(4),
+          ),
+          padding: const EdgeInsets.all(4),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.green.shade200,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            alignment: Alignment.bottomRight,
+            padding: const EdgeInsets.all(8),
+            child: Text(prediction.primaryText),
+          ),
+        );
+      }).toList(),
+    );
+  }),
+
+```
+
 ### Builders
 
-`placesBuilder`
-The places/predictions builder representing UI for found predictions. The resulting widget is displayed in the overlay below the `TextField`. It provides 2 parameters: 
+`placesBuilder` - The places/predictions builder representing UI for found predictions. The resulting widget is displayed in the overlay below the `TextField`. It provides 2 parameters: 
         - `predictios` - List of predictions to display
         - `onPredictionSelected` - This callback should be called when the prediction is selected inside the resulting widget. The main `onPlaceSelected` callback will be invoked (and place fetched in case `fetchPlace` is true).
 
