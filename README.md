@@ -12,7 +12,7 @@ This package provides a fully customizable autocomplete TextField.  The package 
 ## Usage
 
 <p>
-<img src="https://github.com/julienandco/google_places_autocomplete_text_field/raw/main/google_places_textfield_demo.gif">
+<img src="https://raw.githubusercontent.com/3ph/google_places_sdk_text_field/master/google_places_textfield_demo.gif">
 </p>
 
 Simple usage:
