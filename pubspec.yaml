@@ -1,0 +1,20 @@
+name: google_places_sdk_text_field
+description: "A fully customizable Google Places autocomplete TextField. Uses native SDK, not JS API!"
+version: 0.1.0
+repository: https://github.com/3ph/google_places_sdk_text_field
+issue_tracker: https://github.com/3ph/google_places_sdk_text_field/issues
+
+environment:
+  sdk: ^3.5.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_google_places_sdk: ^0.3.10
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
