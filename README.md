@@ -129,8 +129,8 @@ The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[pub-dev-shield]: https://img.shields.io/pub/v/walletconnect_qrcode_modal_dart?style=for-the-badge
-[pub-dev-url]: https://pub.dev/packages/walletconnect_qrcode_modal_dart
+[pub-dev-shield]: https://img.shields.io/pub/v/google_places_sdk_text_field?style=for-the-badge
+[pub-dev-url]: https://pub.dev/packages/google_places_sdk_text_field
 [effective-dart-shield]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg?style=for-the-badge
 [effective-dart-url]: https://github.com/tenhobi/effective_dart
 [stars-shield]: https://img.shields.io/github/stars/3ph/google_places_sdk_text_field.svg?style=for-the-badge&logo=github&colorB=deeppink&label=stars
