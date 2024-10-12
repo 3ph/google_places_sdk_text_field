@@ -1,6 +1,6 @@
 name: google_places_sdk_text_field
 description: "A fully customizable Google Places autocomplete TextField. Uses native SDK, not JS API!"
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/3ph/google_places_sdk_text_field
 issue_tracker: https://github.com/3ph/google_places_sdk_text_field/issues
 
